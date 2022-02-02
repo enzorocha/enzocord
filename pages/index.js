@@ -37,9 +37,9 @@ function Titulo(props){
             <Tag>{props.children}</Tag>
             <style jsx>{`
             ${Tag} {
-                color: ${appConfig.theme.colors.primary[400]};
+                color: #128246;
                 font-size: 24px;
-                font-weight: 600;
+                font-weight: 800;
             }
             `}</style>
         </>
@@ -67,9 +67,9 @@ export default function PaginaInicial() {
         <GlobalStyle />
         <Box
           styleSheet={{
-            display: 'flex', alignItems: 'center', justifyContent: 'center',
-            backgroundColor: appConfig.theme.colors.primary[500],
-            backgroundImage: 'url(https://virtualbackgrounds.site/wp-content/uploads/2020/08/the-matrix-digital-rain.jpg)',
+            display: 'flex', alignItems: 'center', justifyContent: 'left',
+            // backgroundColor: appConfig.theme.colors.primary[500],
+            backgroundImage: 'url(https://farm7.static.flickr.com/6153/6169013713_a9c88844c3_c.jpg)',
             backgroundRepeat: 'no-repeat', backgroundSize: 'cover', backgroundBlendMode: 'multiply',
           }}
         >
@@ -93,10 +93,10 @@ export default function PaginaInicial() {
               as="form"
               styleSheet={{
                 display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center',
-                width: { xs: '100%', sm: '50%' }, textAlign: 'center', marginBottom: '32px',
+                width: { xs: '70%', sm: '50%' }, textAlign: 'center', marginBottom: '32px',
               }}
             >
-              <Titulo tag="h2">Boas vindas de volta!</Titulo>
+              <Titulo tag="h2">Bem vindo ao Enzocord!</Titulo>
               <Text variant="body3" styleSheet={{ marginBottom: '32px', color: appConfig.theme.colors.neutrals[300] }}>
                 {appConfig.name}
               </Text>
@@ -107,7 +107,7 @@ export default function PaginaInicial() {
                   neutral: {
                     textColor: appConfig.theme.colors.neutrals[200],
                     mainColor: appConfig.theme.colors.neutrals[900],
-                    mainColorHighlight: appConfig.theme.colors.primary[500],
+                    mainColorHighlight:' #128246',
                     backgroundColor: appConfig.theme.colors.neutrals[800],
                   },
                 }}
